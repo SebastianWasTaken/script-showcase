@@ -1,0 +1,21 @@
+game.ReplicatedStorage.Changeteam.OnServerEvent:Connect(function(player,teamColor)
+	print(teamColor)
+	if  teamColor == BrickColor.new("Black") and player:IsInGroup(10539007) then
+		player.TeamColor = teamColor
+		player:LoadCharacter()
+	elseif teamColor == BrickColor.new("Deep orange") then
+		player.TeamColor = teamColor
+		player:LoadCharacter()
+	elseif teamColor == BrickColor.new("Really red") then
+		player.TeamColor = teamColor
+		player:LoadCharacter()
+	elseif  teamColor == BrickColor.new("Bright yellow") then
+		player.TeamColor = teamColor
+		player:LoadCharacter()
+	else
+		print("N/A")
+		player.PlayerGui.denied.Frame.Visible = true
+		wait(5)
+		player.PlayerGui.denied.Frame.Visible = false
+	end
+end)
