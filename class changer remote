@@ -42,7 +42,7 @@ class.OnServerEvent:Connect(function(Player,className)
 				wait()
 
 				local BackpackI = Player.StarterGear.Musician
-				for i,v in pairs(BackpackI) do
+				for i,v in pairs(BackpackI:GetChildren()) do
 					v.Parent = Backpack
 				end
 				wait()
@@ -73,7 +73,7 @@ class.OnServerEvent:Connect(function(Player,className)
 				wait()
 
 				local BackpackII = Player.StarterGear.Musketeer
-				for i,v in pairs(BackpackII) do
+				for i,v in pairs(BackpackII:GetChidren()) do
 					v.Parent = Backpack
 				end
 				wait()
@@ -105,7 +105,7 @@ class.OnServerEvent:Connect(function(Player,className)
 				wait()
 
 				local BackpackIII = Player.StarterGear.Artillery
-				for i,v in pairs(BackpackIII) do
+				for i,v in pairs(BackpackIII:GetChildren()) do
 					v.Parent = Backpack
 				end
 				wait()
@@ -137,7 +137,7 @@ class.OnServerEvent:Connect(function(Player,className)
 					end --Deletes Equipped Tool
 					wait()
 					local BackpackIIII = Player.StarterGear.Officer
-					for i,v in pairs(BackpackIIII) do
+					for i,v in pairs(BackpackIIII:GetChildren()) do
 						v.Parent = Backpack
 					end
 					wait()
