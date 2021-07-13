@@ -1,0 +1,30 @@
+local remote = game.ReplicatedStorage.Changeteam
+
+local frame = script.Parent:WaitForChild("Frame")
+
+local Menuth = script.Parent:WaitForChild("Menu")
+
+
+frame.black.Activated:Connect(function()
+	remote:FireServer(BrickColor.new("Black"))
+end)
+
+
+frame.orange.Activated:Connect(function()
+	remote:FireServer(BrickColor.new("Deep orange"))
+end)
+
+
+frame.red.Activated:Connect(function()
+	remote:FireServer(BrickColor.new("Really red"))
+end)
+
+frame.yellow.Activated:Connect(function()
+	remote:FireServer(BrickColor.new("Bright yellow"))
+end)
+
+Menuth.Activated:Connect(function()
+	frame.Visible = not frame.Visible
+end)
+
+
