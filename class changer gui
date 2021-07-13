@@ -1,0 +1,25 @@
+local remote = game.ReplicatedStorage.Changeteam
+
+local frame = script.Parent:WaitForChild("Frame")
+
+local Meck = "Navy blue"
+
+local West = "Deep orange"
+
+local Menuth = script.Parent:WaitForChild("Menu")
+
+
+frame.Mecklen.MouseButton1Click:Connect(function()
+	remote:FireServer(BrickColor.new(Meck))
+end)
+
+
+
+frame.Westpha.MouseButton1Click:Connect(function()
+	remote:FireServer(BrickColor.new(West))
+end)
+
+Menuth.MouseButton1Click:Connect(function()
+	frame.Visible = not frame.Visible
+end)
+
