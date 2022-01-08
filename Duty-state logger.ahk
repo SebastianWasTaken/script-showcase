@@ -22,7 +22,7 @@ minute := A_Min
 time := % hr . ":" . minute
 Text :=
 InputBox, Text, Activity Logger, Starting/Ending your duty state,,275,150,Locale,,,
-url:="https://discord.com/api/webhooks/929121676120174592/yh6-hRfFpttRYwLtd1wEW-poLEpSg8zM2W16GSlKpJ71yY8AU7EijpXurfOnG6xa9ZQV" 
+url:="redacted" 
 postdata=
 (
 {
